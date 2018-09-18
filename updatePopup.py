@@ -15,8 +15,10 @@ class MainWindow(QtWidgets.QMainWindow):
             self.close()
 
     def _update(self):
+        print('updating')
         path = os.getcwd()
-        os.system(path+'/update')
+        comand = 'pip install --src=%s --upgrade -e git://github.com/lgm8/update.git@master#egg=update'%path
+        os.system(comand)
 
 
 if __name__ == "__main__":

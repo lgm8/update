@@ -1,4 +1,3 @@
 #!/bin/sh
 
-pip install git+https://github.com/lgm8/update.git
-
+pip install --src=$0 --upgrade -e git://github.com/lgm8/update.git@$1#egg=update
