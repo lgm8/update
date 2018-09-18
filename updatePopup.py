@@ -15,9 +15,8 @@ class MainWindow(QtWidgets.QMainWindow):
             self.close()
 
     def _update(self):
-        print('updating at 15-38')
         # comand = 'pip install git+https://github.com/lgm8/update.git#egg=update'
-        comand = 'git pull --rebase origin master'
+        comand = 'git reset --hard '
         os.system(comand)
 
 
