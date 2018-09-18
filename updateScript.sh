@@ -1,1 +1,1 @@
-pip install git+https://github.com/other-repository/project.git@remote_branch_name
+pip install git+https://github.com/lgm8/update.git
