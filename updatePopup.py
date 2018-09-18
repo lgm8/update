@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from PyQt5 import QtCore, QtWidgets
 import subprocess
 
@@ -15,7 +15,8 @@ class MainWindow(QtWidgets.QMainWindow):
             self.close()
 
     def _update(self):
-        subprocess.call(['./test.sh'])
+        path = os.getcwd()
+        subprocess.call([path+'/updateScript.sh'])
 
 
 if __name__ == "__main__":
