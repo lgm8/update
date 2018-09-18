@@ -16,9 +16,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def _update(self):
         # comand = 'pip install git+https://github.com/lgm8/update.git#egg=update'
+        stash ='git stash'
         comand = 'git pull --rebase'
+        popStash = 'git stash pop'
+        os.system(stash)
         os.system(comand)
-
+        os.system(popStash)
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
