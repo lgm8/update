@@ -1,0 +1,1 @@
+pip install git+https://github.com/other-repository/project.git@remote_branch_name
