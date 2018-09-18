@@ -16,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def _update(self):
         path = os.getcwd()
-        subprocess.call([path+'/updateScript.sh'])
+        os.system(path+'/update')
 
 
 if __name__ == "__main__":
