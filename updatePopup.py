@@ -16,7 +16,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def _update(self):
         # comand = 'pip install git+https://github.com/lgm8/update.git#egg=update'
-        comand = 'git reset --hard '
+        comand = 'git pull --rebase'
         os.system(comand)
 
 
